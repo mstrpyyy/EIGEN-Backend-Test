@@ -10,6 +10,8 @@ function reverseAlphabet(string) {
 
 console.log(reverseAlphabet(string));
 
+
+
 //Diberikan contoh sebuah kalimat, silahkan cari kata terpanjang dari kalimat tersebut, jika ada kata dengan panjang yang sama silahkan ambil salah satu
 const sentence = "Saya sangat senang mengerjakan soal algoritma"
 
@@ -28,10 +30,10 @@ function getLongestWord(string) {
 console.log(getLongestWord(sentence));
 
 
+
 //Terdapat dua buah array yaitu array INPUT dan array QUERY, silahkan tentukan berapa kali kata dalam QUERY terdapat pada array INPUT
 INPUT = ['xc', 'dz', 'bbb', 'dz']  
 QUERY = ['bbb', 'ac', 'dz']  
-
 
 function countQuery(input, query) {
     let output = []
@@ -49,6 +51,7 @@ function countQuery(input, query) {
 }
 
 console.log(countQuery(INPUT, QUERY));
+
 
 
 //Silahkan cari hasil dari pengurangan dari jumlah diagonal sebuah matrik NxN Contoh:
