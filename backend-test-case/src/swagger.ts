@@ -13,7 +13,7 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:8000/api', // Base URL
+        url: 'http://localhost:8000/api', 
         description: 'Development server',
       },
     ],
