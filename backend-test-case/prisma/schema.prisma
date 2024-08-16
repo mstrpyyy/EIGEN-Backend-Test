@@ -13,4 +13,28 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Book {
+  code         String         @id @unique
+  title        String         @unique
+  author       String
+  stock        Int            @default(10)
+  BorrowedList BorrowedList[]
+}
 
+model Member {
+  code              String         @id @unique
+  name              String         @unique
+  penaltyExpireDate DateTime?
+  BorrowedList      BorrowedList[]
+}
+
+model BorrowedList {
+  id           String    @id @default(uuid())
+  bookCode     String
+  memberCode   String
+  borrowDate DateTime  @default(now())
+  returnDate DateTime?
+  returned     Boolean   @default(false)
+  book         Book      @relation(fields: [bookCode], references: [code])
+  member       Member    @relation(fields: [memberCode], references: [code])
+}
