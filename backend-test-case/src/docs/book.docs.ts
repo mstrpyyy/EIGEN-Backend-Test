@@ -27,7 +27,7 @@
  *                     properties:
  *                       code:
  *                         type: string
- *                         example: HOB-83
+ *                         example: HOB-8rigi
  *                       title:
  *                         type: string
  *                         example: The Hobbit, or There and Back Again
