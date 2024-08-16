@@ -1,14 +1,11 @@
 import { Request, Response, Router,  } from 'express'
-
+import bookRouter from './routers/book.router'
+import memberRouter from './routers/member.router'
 
 const router = Router()
 
-router.get('/', (req: Request, res: Response) => {
-    res.status(200).send({
-        status: "ok",
-        message: "welcome to Arya's API"
-    })
-})
+router.use('/books', bookRouter)
+router.use('/members', memberRouter)
 
 
 export default router
