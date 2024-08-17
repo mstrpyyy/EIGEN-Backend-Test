@@ -32,8 +32,8 @@ console.log(getLongestWord(sentence));
 
 
 //Terdapat dua buah array yaitu array INPUT dan array QUERY, silahkan tentukan berapa kali kata dalam QUERY terdapat pada array INPUT
-INPUT = ['xc', 'dz', 'bbb', 'dz']  
-QUERY = ['bbb', 'ac', 'dz']  
+const INPUT = ['xc', 'dz', 'bbb', 'dz']  
+const QUERY = ['bbb', 'ac', 'dz']  
 
 function countQuery(input, query) {
     let output = []
@@ -55,7 +55,7 @@ console.log(countQuery(INPUT, QUERY));
 
 
 //Silahkan cari hasil dari pengurangan dari jumlah diagonal sebuah matrik NxN Contoh:
-matrix = [[1, 2, 0], [4, 5, 6], [7, 8, 9]] 
+const matrix = [[1, 2, 0], [4, 5, 6], [7, 8, 9]] 
 
 function matrixcDiagonalSubtract(matrix) {
     const arrLength = matrix.length
